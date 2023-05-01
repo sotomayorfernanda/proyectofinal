@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css/estilos.css">
     <title>Contactos</title>
 </head>
+
 <body>
-    
-        <section class="contactos">
-        <div class="contactos1">
-            <form action="enviar php." method="post" enctype="application/x-www-form-urlencoded">
+    <!-- navbar inicia -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">Dishtry Yoga</a>
 
-                <h2>Contactos</h2>
-                Nombre y Apellido
-                <input type="text"required placeholder="Ingresa tu nombre"> <br>
-                Email <input type="email" placeholder="Ingresa tu Email"> <br>
-                Telefono <input type="text" required placeholder="Ingresa tu numero de telefono"> <br>
-                <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Escribe tu comentario"></textarea>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <input type="reset" value="Borrar"> <br>
-                <input type="enciar" value="Enviar">
-                </form>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/beneficios.html">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/profesores.html">Profesores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Nuestros Contactos</a>
+                </li>
+            </ul>
         </div>
-        </section>
+    </nav>
+    <!-- navbar  fin-->
+    <!--Formulario inicia-->
+    <form action="/action_page.php">
+        <div class="form-group">
+            <label for="email"> Nombre y Apellido</label>
+            <input type="email" class="form-control" placeholder="Ingresar nombre y apellido" id="email">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Ingresar email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Numero de Telefono</label>
+            <input type="password" class="form-control" placeholder="Ingresar nuemero de telefono" id="pwd">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <!--Formulario fin-->
 
-        <footer>
-            <p>Todos los derechos son reservados por copyright</p>
-            <div class="redes">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </footer>
+    <footer>
+        <p>Todos los derechos son reservados por copyright</p>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

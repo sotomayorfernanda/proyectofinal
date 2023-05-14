@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
-    <title>Contactos</title>
+    <title> Nuestros Contactos</title>
 </head>
 
 <body>
@@ -44,26 +44,27 @@
     </nav>
     <!-- navbar  fin-->
     <!--Formulario inicia-->
-    <form action="/action_page.php">
-        <div class="form-group">
-            <label for="email"> Nombre y Apellido</label>
-            <input type="email" class="form-control" placeholder="Ingresar nombre y apellido" id="email">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" placeholder="Ingresar email" id="email">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Numero de Telefono</label>
-            <input type="password" class="form-control" placeholder="Ingresar nuemero de telefono" id="pwd">
-        </div>
-
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary justify-content-center">Enviar</button>
-    </form>
+    <div class="contenedor-contacto">
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email"> Nombre y Apellido</label>
+                <input type="email" class="form-control" placeholder="Ingresar nombre y apellido" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Ingresar email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Numero de Telefono</label>
+                <input type="password" class="form-control" placeholder="Ingresar nuemero de telefono" id="pwd">
+            </div>
+        
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            </div>
+            <button type="submit" class="btn btn-primary justify-content-center">Enviar</button>
+        </form>
+    </div>
     <!--Formulario fin-->
     <footer>
         <p>Todos los derechos son reservados por copyright</p>

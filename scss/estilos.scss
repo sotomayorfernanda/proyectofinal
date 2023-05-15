@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
@@ -73,7 +74,6 @@ $font-weight5:500;
     background-image: url(../img/imagen1-jpg.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     width: 100;
     height: 100vh;
     color: $color4;
@@ -91,312 +91,50 @@ h1 {
     text-shadow: 0 0 5px $color2;
 }
 
-footer {
-    background-color: $color4;
-    color: $color2;
+$variable: footer;
+footer{
+    @if $variable == img{
+        color: $color3;
+        background-color: $color5;
+    }
+    @else if $variable == texto{
+        background-color: $color1;
+        color: $color7;
+        font-family: $font-weight1;
+        text-align: center;
+    }
+    @else if $variable == footer{
+        background-color: $color4;
+        color: $color2;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+        font-family: $font5;
+    }
+
+    @else{
+    color: $color9;
+    background-color: $color3;
+    font-family: $font2;
+    font-size: large;
     text-align: center;
-    font-size: 30px;
-    padding: 20px;
-    font-family: $font5;
-    font-weight: $font-weight5;
+    }
+
 }
 
-.redes i {
+.redes i{
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     letter-spacing: 20px;
     color: $color2;
 }
 
-.redes i:hover {
+.redes i:hover{
     color: $color1;
 }
 
-/*servicios*/
-@mixin styles{
-    font-family: $font5;
-    font-weight: $font-weight4;
-    color: $color4;
-    background-image: linear-gradient(to top left, $color1, $color10, $color6);
-}
-.card {
-    text-align: center;
-    @include styles();
-}
-    h2{
-    font-family: $font3;
-    font-weight:$font-weight5;
-    color: $color9;
-}
+@import"_servicios";
+@import "_beneficios";
+@import "profesores";
+@import "_contactos";
 
-/*benefcio*/
-
-.list-beneficio {
-    background-image: linear-gradient(to right,$color7 ,$color10,);
-    border: 10px solid $color2;
-    color: $color9;
-    font-family: $font5;
-    font-size: 25px;
-    font-weight: $font-weight2;
-    text-shadow: 1px 1px $color2;
-    padding-left: 40px;
-    list-style: none;
-}
-
-.titulo {
-    color: $color9;
-    font-family: $font5;
-    font-weight: $font-weight4;
-}
-
-.titulo-beneficio {
-    text-align: center;
-    background-image: linear-gradient(to bottom, $color3 , $color10);
-    color: $color9;
-    border: 10px solid $color4;
-    margin-top: 5px;
-    padding: 15px;
-    font-family: $font4;
-    font-size: 35px;
-    font-weight: $font-weight4;
-}
-
-.galeria {
-    width: 100%;
-    min-height: 300px;
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 200px);
-    padding: 20px;
-    grid-gap: 15px;
-}
-
-.item{
-    border: 3px solid #333;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.9s;
-}
-
-.item:hover{
-    transform: scale(1.09);
-    transition: all 0.9s;
-    filter: sepia(0%);
-}
-
-.item1{
-    background-image: url(../img/item1.jpg);
-    /* grid-column: 1/2;
-    grid-row: 1/3; */
-}
-.item2{
-    background-image: url(../img/item2.jpg);
-    /* grid-column: 2/3;
-    grid-row: 1/2; */
-}
-
-.item3{
-    background-image: url(../img/item3.jpg);
-    /* grid-column: 3/5;
-    grid-row: 1/2; */
-}
-.item4{
-    background-image: url(../img/item4.jpg);
-    /* grid-column: 2/3;
-    grid-row: 2/4; */
-}
-
-.item5{
-    background-image: url(../img/item5.jpg);
-    /* grid-column: 3/4;
-    grid-row: 2/3; */
-}
-.item6{
-    background-image: url(../img/item6.jpg);
-    /* grid-column: 4/5;
-    grid-row: 2/3; */
-}
-
-.item7{
-    background-image: url(../img/item7.jpg);
-    /* grid-column: 1/2;
-    grid-row: 3/4; */
-}
-.item8{
-    background-image: url(../img/item8.jpg);
-    /* grid-column: 3/5;
-    grid-row: 3/4; */
-}
-@media only screen and (min-width:480px) {
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-    }
-    .nosotros{
-        display: flex;
-    }
-    .nleft{
-        width: 50%;
-    }
-    .nright{
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .galeria{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .item1{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .item2{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .item3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .item4{
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-    .item5{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .item6{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .item7{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .item8{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    }
-}
-
-@media only screen and (min-width:1024px) {
-    .galeria{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 200px 200px;
-    }
-}
-/*profesores*/
-.card-group {
-    background-image: linear-gradient($color2, $color3,$color10);
-}
-.card-title{
-    text-align: center;
-    font-family: $font-weight5;
-    font-weight: $font-weight4;
-    font-size: 25px;
-    color: $color4;
-    .span {
-        color: $color4;
-    }
-
-    .card-text {
-        color: $color4;
-        font-family: $font3;
-        font-weight: $font-weight2;
-        font-size: 25px;
-    }
-
-    .titulo-profesor{
-        text-align: center;
-        animation-name: efecto;
-        animation-iteration-count: 2;
-        animation-timing-function: ease-in;
-        animation-duration: 6s;
-    }
-}
-.h2-profesor{
-    color: $color4;
-}
-
-    .sombra_movil{
-        -webkit-transform: translateX(0);
-        -webkit-transition-duration: 0.3s;
-    }
-    
-    .sombra_movil:hover:before{
-        opacity: 0.4;
-        -moz-animation-direction: translateY(6px);
-        -webkit-animation: 1.5s moversombra infinite;
-    }
-    
-    @-webkit-keyframes moversombra{
-        50%{
-            opacity: 1;
-            -webkit-transform: translateY(3px);
-        }
-    }
-    
-    .sombra_movil:hover{
-        -webkit-transform: translateY(-6px);
-        -webkit-animation: 1.5s movercaja infinite;
-    }
-    
-    @keyframes efecto {
-        0% {
-            width: 100px;
-        }
-
-
-        35% {
-        background-color: $color10;
-            }
-        
-        50%{
-            border-radius: 50%;
-        }
-
-
-        100% {
-            width: 500px;
-            background-color: $color3;
-        }
-    }
-    .sombra_movil:before{
-        position: absolute;
-        content: '';
-        top: 100%;
-        left: 5%;
-        height: 10px;
-        width: 90%;
-        opacity: 0;
-        background: -webkit-radial-gradient(
-            center, ellipse,
-            rgba(0,0,0,0.5) 0%,
-            rgba(0,0,0,0) 80%
-            );
-        -webkit-transition-duration: 0.3s;
-    }
-    
-/*CONTACTOS*/
-.contenedor-contacto{
-    background-image: linear-gradient($color5, $color1);
-}
-.form-control{
-    font-family: $font2;
-    font-weight: $font-weight5;
-}
-.form-group {
-    height: 100px;
-    width: 50%;
-    margin-left: 25px;
-    margin-right: 50px;
-    margin-top: 25px;
-
-    .btn {
-        margin-left: 40px;
-        margin-bottom: 50px;
-    }
-}

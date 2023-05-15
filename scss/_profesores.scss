@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
+
+
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+
+/*paleta de colores*/
+$color1:#BF8563;
+$color2:#F2EFE9;
+$color3:#D9B97E;
+$color4:#091418;
+$color5:#BF7839;
+$color6:#BF7245;
+$color7:#9CB0D9;
+$color8:#5A5F58;
+$color9:white;
+$color10:#DBB5A8;
+
+/*fonts*/
+$font1:'Kanit',
+sans-serif;
+$font2:'Kreon',
+serif;
+$font3:'Inter',
+sans-serif;
+$font4:'Secular One',
+sans-serif;
+$font5:'Assistant',
+sans-serif;
+
+/*font-weight*/
+$font-weight1:100;
+$font-weight2:200;
+$font-weight3:300;
+$font-weight4:bold;
+$font-weight5:500;
+
+/*font-size*/
+
+/*profesores*/
+
+.sombra_movil{
+    background-image: linear-gradient(to left, $color10 , $color1,$color6);
+
+    h2{
+        text-align: center;
+        font-family: $font3;
+        font-weight: $font-weight3;
+    }
+    p{
+        text-align: center;
+        font-family: $font5;
+        font-weight: $font-weight5;
+        margin: 10px;
+    }
+}
+

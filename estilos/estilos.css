@@ -10,6 +10,18 @@ font-family: 'Secular One', sans-serif;*/
 /*fonts*/
 /*font-weight*/
 /*font-size*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +52,6 @@ font-family: 'Secular One', sans-serif;*/
   background-image: url(../img/imagen1-jpg.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   width: 100;
   height: 100vh;
   color: #091418;
@@ -65,12 +76,11 @@ footer {
   font-size: 30px;
   padding: 20px;
   font-family: "Assistant", sans-serif;
-  font-weight: 500;
 }
 
 .redes i {
   font-size: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   letter-spacing: 20px;
   color: #F2EFE9;
 }
@@ -79,6 +89,15 @@ footer {
   color: #BF8563;
 }
 
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+/*paleta de colores*/
+/*fonts*/
+/*font-weight*/
+/*font-size*/
 /*servicios*/
 .card {
   text-align: center;
@@ -94,6 +113,15 @@ h2 {
   color: white;
 }
 
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+/*paleta de colores*/
+/*fonts*/
+/*font-weight*/
+/*font-size*/
 /*benefcio*/
 .list-beneficio {
   background-image: linear-gradient(to right, #9CB0D9, #DBB5A8);
@@ -128,7 +156,7 @@ h2 {
 .galeria {
   width: 100%;
   min-height: 300px;
-  background-color: rgb(0, 0, 0);
+  background-color: #091418;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(8, 200px);
@@ -255,91 +283,45 @@ h2 {
     grid-template-rows: 200px 200px;
   }
 }
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+/*paleta de colores*/
+/*fonts*/
+/*font-weight*/
+/*font-size*/
 /*profesores*/
-.card-group {
-  background-image: linear-gradient(#F2EFE9, #D9B97E, #DBB5A8);
-}
-
-.card-title {
-  text-align: center;
-  font-family: 500;
-  font-weight: bold;
-  font-size: 25px;
-  color: #091418;
-}
-.card-title .span {
-  color: #091418;
-}
-.card-title .card-text {
-  color: #091418;
-  font-family: "Inter", sans-serif;
-  font-weight: 200;
-  font-size: 25px;
-}
-.card-title .titulo-profesor {
-  text-align: center;
-  animation-name: efecto;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
-  animation-duration: 6s;
-}
-
-.h2-profesor {
-  color: #091418;
-}
-
 .sombra_movil {
-  -webkit-transform: translateX(0);
-  -webkit-transition-duration: 0.3s;
+  background-image: linear-gradient(to left, #DBB5A8, #BF8563, #BF7245);
+}
+.sombra_movil h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+.sombra_movil p {
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  font-weight: 500;
+  margin: 10px;
 }
 
-.sombra_movil:hover:before {
-  opacity: 0.4;
-  -moz-animation-direction: translateY(6px);
-  -webkit-animation: 1.5s moversombra infinite;
-}
-
-@-webkit-keyframes moversombra {
-  50% {
-    opacity: 1;
-    -webkit-transform: translateY(3px);
-  }
-}
-.sombra_movil:hover {
-  -webkit-transform: translateY(-6px);
-  -webkit-animation: 1.5s movercaja infinite;
-}
-
-@keyframes efecto {
-  0% {
-    width: 100px;
-  }
-  35% {
-    background-color: #DBB5A8;
-  }
-  50% {
-    border-radius: 50%;
-  }
-  100% {
-    width: 500px;
-    background-color: #D9B97E;
-  }
-}
-.sombra_movil:before {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 80%);
-  -webkit-transition-duration: 0.3s;
-}
-
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+/*paleta de colores*/
+/*fonts*/
+/*font-weight*/
+/*font-size*/
 /*CONTACTOS*/
 .contenedor-contacto {
-  background-image: linear-gradient(#BF7839, #BF8563);
+  background-image: url(../img/imagen6-jpg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .form-control {
@@ -353,6 +335,7 @@ h2 {
   margin-left: 25px;
   margin-right: 50px;
   margin-top: 25px;
+  color: #091418;
 }
 .form-group .btn {
   margin-left: 40px;

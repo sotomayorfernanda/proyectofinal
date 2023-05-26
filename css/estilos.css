@@ -10,7 +10,6 @@ font-family: 'Secular One', sans-serif;*/
 /*fonts*/
 /*font-weight*/
 /*font-size*/
-
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap");
@@ -60,7 +59,7 @@ font-family: 'Secular One', sans-serif;*/
 }
 
 .jumbotron p {
-  font-family: "Inter", sans-serif;
+  font-family: "Secular One", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
@@ -68,6 +67,10 @@ font-family: 'Secular One', sans-serif;*/
 h1 {
   color: #091418;
   text-shadow: 0 0 5px #F2EFE9;
+}
+
+.contenido-index {
+  color: #BF8563;
 }
 
 footer {
@@ -89,6 +92,20 @@ footer {
 .redes i:hover {
   color: #BF8563;
 }
+
+.menu p {
+  font-family: "Assistant", sans-serif;
+}
+
+/*font-family: 'Assistant', sans-serif;
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Kreon', serif;
+font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Inter', sans-serif;*/
+/*paleta de colores*/
+/*fonts*/
+/*font-weight*/
+/*font-size*/
 /*servicios*/
 .card {
   text-align: center;
@@ -352,6 +369,10 @@ font-family: 'Secular One', sans-serif;*/
 .form-group .btn {
   margin-left: 40px;
   margin-bottom: 50px;
+}
+
+.contacto-texto {
+  color: #BF7839;
 }
 
 /*# sourceMappingURL=estilos.css.map */

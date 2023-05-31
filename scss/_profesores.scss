@@ -45,39 +45,69 @@ $font-weight5:500;
 /*font-size*/
 
 /*profesores*/
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(to left, $color10, $color7);
+}
 
-.sombra_movil{
-    background-image: linear-gradient(to left, $color3 , $color10,$color7);
+.image-container img {
+    width: 55%;
+    height: 500px;
+    justify-content: center;
+}
+
+.texto-profesor {
+    background-image: linear-gradient(to left, $color10, $color7);
+
+}
+h4 {
+    background-image: linear-gradient(to left, $color10, $color7);
+    text-align: center;
+    font-family: $font5;
+    font-weight: $font-weight6;
+    font-size: 30px;
+}
+
+p {
+    font-family: $font3;
+    font-weight: $font-weight4;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.sombra_movil1 {
+    background-image: linear-gradient(to left, $color3, $color10, $color7);
     -webkit-transform: translateX(0);
     -webkit-transition-duration: 0.3s;
 }
 
-    h2{
-        text-align: center;
-        font-family: $font3;
-        font-weight: $font-weight3;
-    }
-    p{
-        text-align: center;
-        font-family: $font5;
-        font-weight: $font-weight5;
-        margin: 10px;
-    }
-    .sombra_movil:hover:before{
-        opacity: 0.4;
-        -webkit-transform: translateY(6px);
-        -webkit-animation: 1.5s moversombra infinite;
-    }
-    
-    @-webkit-keyframes moversombra{
-        50%{
-            opacity: 1;
-            -webkit-transform: translateY(3px);
-        }
-    }
-    
-    .sombra_movil:hover{
-        -webkit-transform: translateY(-6px);
-        -webkit-animation: 1.5s movercaja infinite;
-    }
+.sombra_movil1:hover:before {
+    opacity: 0.4;
+    -webkit-transform: translateY(6px);
+    -webkit-animation: 1.5s moversombra infinite;
+}
 
+@-webkit-keyframes moversombra {
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(3px);
+    }
+}
+
+.sombra_movil1:hover {
+    -webkit-transform: translateY(-6px);
+    -webkit-animation: 1.5s movercaja infinite;
+}

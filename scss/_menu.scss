@@ -4,12 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&family=Source+Sans+3:ital,wght@1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Fjalla+One&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&family=Source+Sans+3:ital,wght@0,700;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Figtree&family=Fjalla+One&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&family=Source+Sans+3:ital,wght@0,700;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Figtree&family=Fjalla+One&family=Frank+Ruhl+Libre&family=Inter:wght@300&family=Kanit:wght@300&family=Kreon:wght@600&family=Secular+One&family=Source+Sans+3:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*font-family: 'Fjalla One', sans-serif;*/
+/*font-family: 'Inter', sans-serif; 
+font-family: 'Kanit', sans-serif;/ 
 /*font-family: 'Assistant', sans-serif;
-/*font-family: 'Kanit', sans-serif;
-font-family: 'Kreon', serif;
+font-family: 'Kreon', serif; 1
 font-family: 'Secular One', sans-serif;*/
 /*font-family: 'Inter', sans-serif;*/
+/*font-family: 'Frank Ruhl Libre', serif;*/
 
 /*paleta de colores*/
 $color1:#BF8563;
@@ -34,6 +45,12 @@ $font4:'Secular One',
 sans-serif;
 $font5:'Assistant',
 sans-serif;
+$font6: 'Inter',
+sans-serif;
+$font8: 'Fjalla One',
+sans-serif;
+$font10: 'Frank Ruhl Libre',
+serif;
 
 /*font-weight*/
 $font-weight1:100;
@@ -41,102 +58,221 @@ $font-weight2:200;
 $font-weight3:300;
 $font-weight4:bold;
 $font-weight5:500;
+$font-weight6:700;
 
 /*font-size*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*index*/
+
 .navbar {
     background-color: $color4;
-    font-family: $font1;
-    font-weight: $font-weight2;
 }
 
 .navbar-brand {
-    text-shadow: 0 0 5px $color2;
+    text-shadow: 0 0 10px $color2;
+    font-family: $font5;
     font-weight: $font-weight4;
+    font-size: 18px;
+}
+
+.navbar-brand :hover {
+    color: $color10;
 }
 
 .nav-link {
     color: $color2 !important;
+    font-size: 18px;
 }
 
 .nav-link:hover {
-    text-shadow: 0 0 5px $color2;
+    text-shadow: 0 0 10px $color5;
 }
 
-.jumbotron {
-    background-image: url(../img/imagen1-jpg.jpg);
+html,
+body {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: $font6;
+    font-size: 18px;
+    background: $color2;
+}
+
+.main-image {
+    position: relative;
+    background-image: url(../img/pexels-elina-fairytale-3822167.jpg);
     background-size: cover;
-    background-position: center;
-    width: 100;
-    height: 100vh;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
     color: $color4;
-    text-shadow: 0 0 7px $color3;
+    font-family: $font5;
+    font-weight: $font-weight4;
+    text-transform: uppercase;
+    position: relative;
+
+
 }
 
 .jumbotron p {
-    font-family: $font4;
+    background-image: linear-gradient(220deg, $color2, );
+    color: $color4;
+    font-family: $font3;
+    font-weight: $font-weight6;
     font-size: 20px;
+
+}
+
+.menu {
+    background-image: linear-gradient($color7, $color10, $color3);
+}
+
+h3 {
+    color: $color4;
+    font-family: $font5;
+    font-weight: $font-weight4;
+    padding: 50px;
+    margin-top: 5px;
+}
+
+.menu2 {
+    font-family: $font5;
+    font-weight: $font-weight6;
+    color: $color4;
+    margin: 25px;
+
+    & .menu3 {
+        color: $color4;
+        font-family: $font10;
+        font-weight: $font-weight6;
+        font-size: 20px;
+        padding: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.image-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container3 img {
+    width: 55%;
+    height: 550px;
+    justify-content: center;
+    border: 5px solid $color2;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .image-container3 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.sombra_movil {
+    -webkit-transform: translateX(0);
+    -webkit-transition-duration: 0.3s;
+}
+
+.sombra_movil:hover:before {
+    opacity: 0.4;
+    -webkit-transform: translateY(6px);
+    -webkit-animation: 1.5s moversombra infinite;
+}
+
+@-webkit-keyframes moversombra {
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(3px);
+    }
+}
+
+.sombra_movil:hover {
+    -webkit-transform: translateY(-6px);
+    -webkit-animation: 1.5s movercaja infinite;
+}
+
+@-webkit-keyframes movercaja {
+    50% {
+        -webkit-transform: translateY(-1px);
+    }
+}
+
+.sombra_movil:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+}
+
+
+/*FOOTER INICIA */
+
+$variable: footer;
+
+footer {
+    @if $variable==img {
+        color: $color1;
+        background-color: $color5;
+    }
+
+    @else if $variable==texto {
+        background-color: $color4;
+        color: $color7;
+        font-family: $font2;
+        font-weight: $font-weight2;
+        text-align: center;
+    }
+
+    @else if $variable==footer {
+        background-color: $color6;
+        padding: 20px;
+        text-align: center;
+    }
+
+    @else {
+        color: $color9;
+        background-color: $color3;
+        font-family: $font2;
+        font-size: large;
+        text-align: center;
+    }
+}
+
+.container-footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $font6;
     font-weight: $font-weight4;
 }
 
-h1 {
-    color: $color4;
-    text-shadow: 0 0 5px $color2;
-}
-
-.contenido-index{
-    color: $color1;
-}
-
-$variable: footer;
-footer{
-    @if $variable == img{
-        color: $color3;
-        background-color: $color5;
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
     }
-    @else if $variable == texto{
-        background-color: $color1;
-        color: $color7;
-        font-family: $font-weight1;
-        text-align: center;
-    }
-    @else if $variable == footer{
-        background-color: $color4;
-        color: $color2;
-        text-align: center;
-        font-size: 30px;
-        padding: 20px;
-        font-family: $font5;
-    }
-
-    @else{
-    color: $color9;
-    background-color: $color3;
-    font-family: $font2;
-    font-size: large;
-    text-align: center;
-    }
-
 }
-
-.redes i{
-    font-size: 25px;
-    margin-bottom: 20px;
-    letter-spacing: 20px;
-    color: $color2;
-}
-
-.redes i:hover{
-    color: $color1;
-}
-
-.menu p{
-    font-family: $font5;
-}
-

@@ -45,30 +45,68 @@ $font-weight5:500;
 /*font-size*/
 
 /*CONTACTOS*/
-.contenedor-contacto{
-    background-image: url(../img/imagen6-jpg.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.form-control{
-    font-family: $font2;
-    font-weight: $font-weight5;
-}
-.form-group {
-    height: 100px;
-    width: 50%;
-    margin-left: 25px;
-    margin-right: 50px;
-    margin-top: 25px;
-    color: $color4;
 
-    .btn {
-        margin-left: 40px;
-        margin-bottom: 50px
+.contenedor-form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-image: linear-gradient(to left, $color1, $color3);
+    border: 7px solid $color2;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor1 {
+    background-image: linear-gradient(to left, $color10, $color3);
+}
+
+.slogan h3 {
+    font-family: $font1;
+    font-weight: $font-weight4;
+    text-align: center;
+    text-shadow: 0 0 10px $color2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-family: $font4;
+    font-weight: $font-weight4;
+
+    & .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    & textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-group button {
+    width: 25%;
+    padding: 10px;
+    background-color: $color4;
+    color: $color2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: $color2;
+    color: $color4;
+}
+
+@media (max-width: 768px) {
+    .contenedor1 {
+        max-width: 100%;
     }
 }
-
-.contacto-texto{
-    color: $color5;
-}
-
